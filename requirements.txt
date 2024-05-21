@@ -1,1 +1,17 @@
-#
+# Utilities
+
+ beautifulsoup4
+
+# streamlit x arctic
+
+streamlit
+replicate
+transformers
+
+# llama index 
+
+llama-index-core
+llama-index-llms-replicate
+llama-index-embeddings-huggingface
+llama-index-readers-file
+llama-index-readers-json
