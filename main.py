@@ -1,18 +1,28 @@
 import streamlit as st
+
+import json
+from typing import Any, Dict, List, Optional, Generator
 import os
+
 import transformers
 from transformers import AutoTokenizer
 from src.engine.prompts import systemprompt
+from llama_index.core import VectorStoreIndex, Settings
+from llama_index.core.readers.json import JSONReader
+# from src.tools.webpagescrapper import WebScrapper
+from llama_index.core.schema import Document
+from llama_index.core.node_parser import SentenceSplitter
+from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+from llama_index.llms.replicate import Replicate
 from llama_index.core import VectorStoreIndex
-from src.tools.webpagescrapper import WebScrapper
-from src.utils.json_handler import load_json_file
-from llama_index.readers.json.base import JSONReader
-from llama_index.readers.json.base import JSONReader
+# from src.tools.webpagescrapper import WebScrapper
+# from src.utils.json_handler import load_json_file
+# from llama_index.readers.JSONReader import JSONReader
+# from llama_index.readers.json.base import JSONReader
 from llama_index.core.schema import Document
 from typing import Any, Dict, Generator, List, Optional
-import src.config.config
+# import src.config.config
 from dotenv import load_dotenv
-from llama_index.llms.replicate import Replicate
 
 from src.config.config import Settings
 from llama_index.core import StorageContext, load_index_from_storage
