@@ -1,6 +1,6 @@
 # Utilities
 
- python-dotenv
+python-dotenv
 
 # streamlit x arctic
 
