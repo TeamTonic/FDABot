@@ -1,4 +1,6 @@
 *.env
+!example.env
+pad.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -61,3 +63,6 @@ coverage.xml
 *.log
 local_settings.py
 db
+
+/venv
+.streamlit
