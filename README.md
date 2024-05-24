@@ -22,7 +22,9 @@ FDA Bot is a Streamlit-based application that scrapes data from the FDA's [offic
 
 ## Why Use FDABot ?
 
--
+- FDABot provides material information for the public health market
+- FDABot provides information about public health actors
+- FDABot informs you about important enforcement actions that concern you !
 
 ## How It Works
 - **Streamlit UI**: A user-friendly interface powered by Streamlit.
